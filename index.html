@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="d">
+      <dialog class="nav">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#" class="button">Contact</a></li>
+        </ul>
+      </dialog>
+    </div>
+    <header>
+      <nav>
+        <img src="./images/logo.svg" alt="logo" />
+        <img
+          src="./images/icon-hamburger.svg"
+          alt="nav-menu"
+          class="nav-button"
+        />
+        <ul class="normal">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><button class="button">Contact</button></li>
+        </ul>
+      </nav>
+      <div class="head">
+        <h1>We are creatives</h1>
+        <a href="#head"
+          ><img
+            src="./images/icon-arrow-down.svg"
+            alt="icon-arrow-down"
+            class="arrow"
+        /></a>
+      </div>
+    </header>
+    <div id="head">
+      <div class="article rev">
+        <div class="content">
+          <h2>Transform your brand</h2>
+          <p class="text">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <a href="#" class="link">Learn more</a>
+        </div>
+        <img src="./images/desktop/image-transform.jpg" alt="Transform" />
+      </div>
+      <div class="article">
+        <img src="./images/desktop/image-stand-out.jpg" alt="Stand out" />
+        <div class="content">
+          <h2>Stand out to the right audience</h2>
+          <p class="text">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <a href="#" class="link">Learn more</a>
+        </div>
+      </div>
+      <div class="articles">
+        <div class="article1">
+          <div class="art-text">
+            <h3>Graphic design</h3>
+            <p>
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+        </div>
+        <div class="article2">
+          <div class="art-text">
+            <h3>Photography</h3>
+            <p>
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="test">
+      <h3 class="test-head">CLIENT TESTIMONIALS</h3>
+      <div class="test-inside">
+        <div>
+          <img
+            src="./images/image-emily.jpg"
+            alt="image-emily"
+            class="test-img"
+          />
+          <p class="test-text">
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <h5 class="test-author">Emily R.</h5>
+          <p class="test-pos">Marketing Director</p>
+        </div>
+        <div>
+          <img
+            src="./images/image-thomas.jpg"
+            alt="image-thomas"
+            class="test-img"
+          />
+          <p class="test-text">
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <h5 class="test-author">Thomas S.</h5>
+          <p class="test-pos">Chief Operating Officer</p>
+        </div>
+        <div>
+          <img
+            src="./images/image-jennie.jpg"
+            alt="image-jennie"
+            class="test-img"
+          />
+          <p class="test-text">
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <h5 class="test-author">Jennie F.</h5>
+          <p class="test-pos">Business Owner</p>
+        </div>
+      </div>
+    </div>
+    <div class="images">
+      <img
+        src="./images/desktop/image-gallery-milkbottles.jpg"
+        alt="milk bottles"
+      />
+      <img src="./images/desktop/image-gallery-orange.jpg" alt="orange" />
+      <img src="./images/desktop/image-gallery-cone.jpg" alt="Cone" />
+      <img
+        src="./images/desktop/image-gallery-sugarcubes.jpg"
+        alt="sugar cubes"
+      />
+    </div>
+    <footer>
+      <h4 class="nav-brand">sunnyside</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+      <div class="icons">
+        <a href="#"><img src="./images/icon-facebook.svg" alt="fb icon" /></a>
+        <a href="#"
+          ><img src="./images/icon-instagram.svg" alt="instagram icon"
+        /></a>
+        <a href="#"
+          ><img src="./images/icon-twitter.svg" alt="twitter icon"
+        /></a>
+        <a href="#"
+          ><img src="./images/icon-pinterest.svg" alt="icon-pinterest"
+        /></a>
+      </div>
+    </footer>
+    <script>
+      const navbtn = document.querySelector(".nav-button");
+      const dialog = document.querySelector(".nav");
+      navbtn.addEventListener("click", () => {
+        dialog.showModal();
+      });
+      dialog.addEventListener("click", (e) => {
+        const dialogDimensions = dialog.getBoundingClientRect();
+        if (
+          e.clientX < dialogDimensions.left ||
+          e.clientX > dialogDimensions.right ||
+          e.clientY < dialogDimensions.top ||
+          e.clientY > dialogDimensions.bottom
+        ) {
+          dialog.close();
+        }
+      });
+    </script>
+  </body>
+</html>
