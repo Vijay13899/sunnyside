@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: ([https://your-live-site-url.com](https://vijay13899.github.io/sunnyside/))
+- Live Site URL: ((https://vijay13899.github.io/sunnyside/))
 
 ## My process
 
